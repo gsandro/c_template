@@ -1,0 +1,67 @@
+\chapter{Example Chapter}
+This is the \LaTeX{} template of gsandro he's a \ac{nice-guy}. The company is also simply called \ac{super-ag}.
+
+\section{Example Section 1}
+
+\begin{table}[ht]
+	\rowcolors{2}{lightgray}{white} % set odd rows in gray
+	\begin{center}
+		\caption{My first table}
+		\begin{tabular}{ |p{3cm}||p{3cm}|p{3cm}|p{3cm}|  }
+			\hline
+			\multicolumn{4}{|c|}{Country List} \\
+			\hline
+			Country Name or Area Name & ISO ALPHA 2 Code & ISO ALPHA 3 Code & ISO numeric Code\\
+			\hline
+			Afghanistan & AF & AFG & 004\\
+			Aland Islands & AX & ALA & 248\\
+			Albania & AL & ALB & 008\\
+			Algeria & DZ & DZA & 012\\
+			American Samoa & AS & ASM & 016\\
+			Andorra & AD & AND & 020\\
+			Angola & AO & AGO & 024\\
+			\hline
+		\end{tabular}
+		\label{tab:countries}
+	\end{center}
+\end{table}
+
+You can easily add a reference to the table like \Tref{tab:countries} with:
+
+\begin{lstlisting}[language=Tex]
+	\ref{myRef}
+\end{lstlisting}
+
+If you want to add the reference name (e.g. Table xx), you can use these commands:
+
+\begin{lstlisting}[language=Tex, caption=List of reference commands]
+	\label{lst:RefCom}
+	\fref{myRef} % Fig. xx
+	\Fref{myRef} % Figure xx
+	\tref{myRef} % Tab. xx
+	\Tref{myRef} % Table xx
+	\eref{myRef} % Eq. xx
+	\Eref{myRef} % Equation xx
+	
+	\Cref{myRef} % Chapter xx
+	\cref{myRef} % chapter xx
+	\Sref{myRef} % Section xx
+	\sref{myRef} % section xx
+	\Aref{myRef} % Appendix xx
+	\aref{myRef} % appendix xx
+\end{lstlisting}
+
+
+\section{Example Section 2}
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics{lama.png}
+		\caption{My first image}
+		\label{fig:lama}
+	\end{center}
+\end{figure}
+
+
+
+

@@ -1,0 +1,51 @@
+%--- Add imgages/ into Figure Path -----------------------------------
+\graphicspath{{images/}}
+
+%--- Colors ----------------------------------------------------------
+% red color
+\definecolor{red}{rgb}{0.8 0 0}
+\definecolor{black}{rgb}{0 0 0}
+\definecolor{lightgray}{gray}{0.98}
+\definecolor{greenCode}{rgb}{0.13,0.54,0.13}
+\definecolor{mauve}{rgb}{0.63,0.12,0.94}
+
+%--- Math Commands ---------------------------------------------------
+\newcommand{\sub}[1]{_{\mathrm{#1}}}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+
+%--- Referencing Commands --------------------------------------------
+% Figures
+\newcommand{\fref}[1]{Fig.~\ref{#1}}
+\newcommand{\Fref}[1]{Figure~\ref{#1}}
+% Tables
+\newcommand{\tref}[1]{Tab.~\ref{#1}}
+\newcommand{\Tref}[1]{Table~\ref{#1}}
+% Equations
+\newcommand{\eref}[1]{Eq.~\eqref{#1}}
+\newcommand{\Eref}[1]{Equation~\eqref{#1}}
+% Section
+\newcommand{\Sref}[1]{Section~\ref{#1}}
+\newcommand{\sref}[1]{section~\ref{#1}}
+% Bold section
+\newcommand{\srefbf}[1]{\textbf{\sref{#1}}}
+\newcommand{\Srefbf}[1]{\textbf{\Sref{#1}}}
+% Subsection
+\newcommand{\Subsref}[1]{Subsection~\ref{#1}}
+% Chapter
+\newcommand{\Cref}[1]{Chapter~\ref{#1}}
+\newcommand{\cref}[1]{chapter~\ref{#1}}
+% Appendix
+\newcommand{\Aref}[1]{Appendix~\ref{#1}}
+\newcommand{\aref}[1]{appendix~\ref{#1}}
+% empty reference
+\newcommand{\noref}[1]{(\ref{#1})}
+
+%--- TOC and Title Numbering -----------------------------------------
+\setcounter{tocdepth}{3}		% level -1: part, 0: chapter, 1: section, etc.
+\setcounter{secnumdepth}{3}		% set depth of the table of contents
+
+%--- Floats Placement ------------------------------------------------
+\setcounter{totalnumber}{5}		% can put up to 5 floats (figures) on one page
+\setcounter{topnumber}{3}		% can put up to 3 floats (figures) in the top area
+\setcounter{bottomnumber}{3}	% can put up to 3 floats (figures) in the bottom area

@@ -1,0 +1,59 @@
+\newcommand{\template}{template-latex}
+\documentclass[
+	confidential=true,					% true / false
+	lang=en,									% en / de / fr
+	path=\template,						% folder to template
+	changelog=references/revisions,	% file for the changelog chapter content
+	% report options
+	% twoside,								% 2-side printed report
+	openany									% don't add blank page between chapters
+]{\template/latex-report}
+
+
+%--- Report Properties (Generated) --------------------------------
+\project{gsandro's project}						% project name
+\title{Software}								% document title
+\subtitle{000.000.000}		% document subtitle
+\author{gsandro}		% author
+\email{info@super-ag.org}					% author's email adress
+\keywords{keyword1, keyword2, ...}	% keywords (pdf properties)
+
+
+% Custom Commands ##################################################
+\input{configuration/commands.tex}			% latex commands
+\input{configuration/codeCommands.tex}		% commands for code printing
+
+% Configure Report #######################################################
+%--- Glossary ------------------------------------------------------------
+\acsetup{list/template=empty, list/template=longtable}	% define the first apparence of the glossary entry 
+\input{references/abbreviations}					% abbreviation file (user defined)
+
+%--- Bibliography --------------------------------------------------------
+\addbibresource{references/bibliography}	% bibliography file (user defined)
+
+% ########################################################################
+\begin{document}
+	% Table of Contents ##################################################
+	\inserttoc
+
+	% Chapters ###########################################################
+	% insert chapters here with \input{myChapter}
+	\input{chapters/chapter1}
+	\input{chapters/chapter2}
+	
+	% Bibliography & Lists ###############################################
+	\insertbibliography						% add bibliography
+	\insertlob 								% add list of abbreviations
+	\insertlof								% add list of figures
+	\insertlot								% add list of tables
+	\insertlol								% add list of codes
+
+	% Appendix ###########################################################
+	\begin{appendix}
+		\part*{Annexes}
+		\addcontentsline{toc}{part}{Annexes}
+		\chapter{Annex chapter}
+			\section{Annex section}
+	\end{appendix}
+
+\end{document}

@@ -1,0 +1,36 @@
+\newcommand{\super@str@company}{SUPER SOFTWARE AG}
+\newcommand{\super@str@addressSL}{SunStreet0, CH-0000 MoonLand}
+\newcommand{\super@str@street}{SunStreet0}
+\newcommand{\super@str@zip}{CH-0000}
+\newcommand{\super@str@city}{MoonLand}
+\newcommand{\super@str@companyPhone}{+41 81 758 19 00}
+\newcommand{\super@str@companyFax}{+41 81 758 09 99}
+\newcommand{\super@str@companyEmail}{\href{mailto:info@super.org}{info@super.org}}
+\newcommand{\super@str@companyWebsite}{\href{www.super.org}{www.super.org}}
+
+
+% strings for the legal pages
+\newcommand{\super@str@impressum}{Legal notice}
+\newcommand{\super@str@copyrightText}{	The content of this document may not be passed on to third parties 
+										without the written authorisation of the company SUPER SOFTWARE AG - 
+										including extracts thereof. All technical information, drawings and 
+										photos used in this document are protected by copyright and any infringement 
+										constitutes a punishable offence!}
+
+\newcommand{\super@str@updateText}{		Due to the ongoing technical development of our products, we reserve the 
+										right to make changes to their designs. Any changes will be disclosed in 
+										individual manuals by replacing relevant pages and/or revising electronic 
+										data storage devices.}
+\newcommand{\super@str@publisher}{Publisher}
+\newcommand{\super@str@dateIssue}{Date of issue}
+\newcommand{\super@str@copyright}{Copyright}
+\newcommand{\super@str@update}{Update}
+\newcommand{\super@str@write}{Writer / Author}
+
+\newcommand{\super@str@chapterAbbr}{List of Abbreviations}
+\newcommand{\super@str@chapterRevisions}{Revisions}
+
+\newcommand{\super@str@report}{Report}
+\newcommand{\super@str@manual}{Manual}
+\newcommand{\super@str@project}{Project}
+\newcommand{\super@str@confidential}{Confidential}
