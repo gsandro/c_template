@@ -1,2 +1,2 @@
-# template_project_c
+# template project in c
 simple c template project
