@@ -8,11 +8,18 @@
 
 ---------------------------------------------]]# 
 
+add_executable(	${META_PROJECT_NAME}
+	main.c
+	CentrifugeTest.c
+	Fault.cpp
+	fb_allocator.c
+	LockGuard.cpp
+	Motor.c
+	sm_allocator.c
+	StateMachine.c
+	x_allocator.c
+)
 
-if(NOT OPTION_BUILD_SRC)
-    return()
-endif()
-
-add_custom_target(src)
-
-# add_subdirectory(bla)
+target_include_directories( ${META_PROJECT_NAME} PUBLIC
+	${CMAKE_CURRENT_SOURCE_DIR}
+)
